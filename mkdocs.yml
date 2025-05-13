@@ -25,8 +25,6 @@ theme:
     - navigation.top
     - navigation.path
     - navigation.indexes
-    - content.code.copy
-    - content.code.select
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -48,18 +46,6 @@ theme:
 markdown_extensions:
   - toc:
       permalink: "#"
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      use_pygments: true
-      pygments_lang_class: true
-      auto_title: true
-  - pymdownx.inlinehilite
-  - pymdownx.details
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
   - admonition
   - attr_list
   - footnotes
