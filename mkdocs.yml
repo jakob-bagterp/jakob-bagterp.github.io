@@ -24,16 +24,16 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
-      accent: blue grey
+      primary: purple
+      accent: purple
       toggle:
         icon: material/eye
         name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: blue grey
+      primary: purple
+      accent: purple
       toggle:
         icon: material/eye-outline
         name: Switch to light mode
