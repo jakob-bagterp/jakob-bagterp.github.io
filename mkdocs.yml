@@ -115,13 +115,8 @@ plugins:
       minify_css: true
       htmlmin_opts:
           remove_comments: true
-      js_files:
-          - js/timeago_mkdocs_material.js
-      css_files:
-          - css/timeago.css
-          - assets/_mkdocstrings.css
 
-watch:
-  - src
+exclude_docs: |
+  /requirements.txt
 
 dev_addr: 127.0.0.1:8005
