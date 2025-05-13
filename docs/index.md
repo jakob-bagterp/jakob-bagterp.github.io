@@ -23,7 +23,7 @@ Lightweight Python package that makes it easy and fast to print colored text in 
 [Go to documentation](https://jakob-bagterp.github.io/colorist/){ .md-button }
 
 ## IndexNow for Python 🔎
-Package that makes it easy to submit URLs to the IndexNow API of Bing and other search engines
+Package that makes it easy to submit URLs to the IndexNow API of Bing and other search engines.
 
 [![Downloads](https://static.pepy.tech/badge/index-now-for-python)](https://pepy.tech/project/index-now-for-python)
 [![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-for-python)](https://github.com/jakob-bagterp/index-now-for-python/)
