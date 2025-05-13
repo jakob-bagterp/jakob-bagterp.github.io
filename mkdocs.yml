@@ -3,7 +3,6 @@ site_url: https://jakob-bagterp.github.io/
 site_description: Python packages and tools that makes life a little easier.
 site_author: Jakob Bagterp
 copyright: Copyright © 2025 - , Jakob Bagterp. All Rights Reserved.
-repo_url: https://github.com/jakob-bagterp/jakob-bagterp.github.io
 nav:
   - Home:
     - index.md
@@ -19,11 +18,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
     - navigation.top
-    - navigation.path
     - navigation.indexes
   palette:
     # Palette toggle for light mode
@@ -57,8 +52,8 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      name: IndexNow for Python on GitHub
-      link: https://github.com/jakob-bagterp/index-now-for-python
+      name: GitHub
+      link: https://github.com/jakob-bagterp/
     - icon: fontawesome/brands/linkedin
       name: Jakob Bagterp on LinkedIn
       link: https://www.linkedin.com/in/jakobbagterp/
@@ -68,22 +63,6 @@ extra:
   analytics:
     provider: google
     property: G-998DJ8EJPL
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/thumb-up-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thank you for your feedback!
-        - icon: material/thumb-down-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thank you for your feedback! Help us improve this page by using our
-            <a href="https://github.com/jakob-bagterp/index-now-for-python/issues/new/?title=[Feedback]+{title}+-+{url}"
-            target="_blank" rel="noopener">
-            feedback form</a>.
   consent:
     title: Cookie consent
     description: >-
@@ -93,8 +72,6 @@ extra:
       make our documentation better.
 
 plugins:
-  - search:
-      lang: en
   - minify:
       minify_html: true
       minify_js: true
