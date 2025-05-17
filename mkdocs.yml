@@ -3,6 +3,7 @@ site_url: https://jakob-bagterp.github.io/
 site_description: Python packages and tools that makes life a little easier.
 site_author: Jakob Bagterp
 copyright: Copyright © 2025 - , Jakob Bagterp. All Rights Reserved.
+
 nav:
   - Home:
     - index.md
