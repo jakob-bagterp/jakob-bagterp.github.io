@@ -30,8 +30,34 @@ Package that makes it easy to submit URLs to the IndexNow API of Bing, Yandex, a
 
 [Go to documentation](https://jakob-bagterp.github.io/index-now-for-python/){ .md-button .md-button--primary }
 
-## Action to Automatically Submit Sitemap to IndexNow 🔎
-If you're using GitHub Actions, this action will automatically submit your sitemap to IndexNow for faster indexing by Bing, Yandex, DuckDuckGo and other search engines.
+### Action to Automatically Submit URLs and Sitemap to IndexNow 🤖
+Based on [IndexNow for Python](https://jakob-bagterp.github.io/index-now-for-python/), this action can automatically submit your URLs and sitemap to IndexNow for faster indexing by Bing, Yandex, DuckDuckGo and other search engines.
+
+If you're using GitHub Pages to publish your site, it's easy to add it to your workflow. The following workflow will automatically trigger when GitHub Pages has published your site, so you can submit the latest version of your sitemap:
+
+```yaml linenums="1" title=".github/workflows/submit_sitemap_to_index_now.yml"
+name: Submit Sitemap to IndexNow
+
+on:
+  workflow_run:
+    workflows: [pages-build-deployment]
+    types: [completed]
+
+jobs:
+  submit-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit sitemap URLs to IndexNow
+        uses: jakob-bagterp/index-now-submit-sitemap-action@v1
+        with:
+          host: example.com
+          api_key: ${{ secrets.INDEX_NOW_API_KEY }}
+          api_key_location: https://example.com/${{ secrets.INDEX_NOW_API_KEY }}.txt
+          sitemap_location: https://example.com/sitemap.xml
+          endpoint: yandex
+```
+
+For more information about the `secrets.INDEX_NOW_API_KEY` and other variables [here](https://jakob-bagterp.github.io/index-now-for-python/user-guide/github-actions/automated-workflows/).
 
 [![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-submit-sitemap-action)](https://github.com/jakob-bagterp/index-now-submit-sitemap-action/)
 
