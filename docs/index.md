@@ -33,9 +33,9 @@ Package that makes it easy to submit URLs to the IndexNow API of Bing, Yandex, a
 ## Action to Automatically Submit Sitemap to IndexNow 🔎
 If you're using GitHub Actions, this action will automatically submit your sitemap to IndexNow for faster indexing by Bing, Yandex, DuckDuckGo and other search engines.
 
-[![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-submit-sitemap-action)](https://github.com/jakob-bagterp/index-now-submit-sitemap-action/)
+[![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-submit-sitemap-urls-action)](https://github.com/jakob-bagterp/index-now-submit-sitemap-urls-action/)
 
-[Go to documentation](https://jakob-bagterp.github.io/index-now-submit-sitemap-action/){ .md-button .md-button--primary }
+[Go to documentation](https://jakob-bagterp.github.io/index-now-submit-sitemap-urls-action/){ .md-button .md-button--primary }
 
 ## Timer for Python ⏳
 Lightweight Python package that makes it easy to measure how much time it takes to run Python programs and gauge performance of multiple, smaller bits of code.
