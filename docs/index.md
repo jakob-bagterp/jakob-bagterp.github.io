@@ -61,6 +61,8 @@ For more information about the `secrets.INDEX_NOW_API_KEY` and other variables [
 
 [![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-submit-sitemap-urls-action)](https://github.com/jakob-bagterp/index-now-submit-sitemap-urls-action/)
 
+[View on GitHub Marketplace](https://github.com/marketplace/actions/index-now-submit-sitemap-urls-action){ .md-button .md-button--secondary }
+
 [Go to documentation](https://jakob-bagterp.github.io/index-now-submit-sitemap-urls-action/){ .md-button .md-button--primary }
 
 ## Timer for Python ⏳
