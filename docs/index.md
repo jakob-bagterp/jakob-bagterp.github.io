@@ -57,6 +57,14 @@ jobs:
           endpoint: yandex
 ```
 
+Alternatively, if you would like to submit your sitemap on a schedule, such as once a month, adjust the `on` condition.
+
+```yaml linenums="3" title=".github/workflows/submit_sitemap_to_index_now.yml"
+on:
+  schedule:
+    - cron: 0 0 1 * *  # Run at midnight UTC on the 1st day of each month.
+```
+
 For more information about the `secrets.INDEX_NOW_API_KEY` and other variables [here](https://jakob-bagterp.github.io/index-now-for-python/user-guide/github-actions/automated-workflows/).
 
 [![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-submit-sitemap-urls-action)](https://github.com/jakob-bagterp/index-now-submit-sitemap-urls-action/)
