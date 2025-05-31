@@ -33,7 +33,7 @@ Package that makes it easy to submit URLs to the IndexNow API of Bing, Yandex, D
 ### Action to Automatically Submit URLs and Sitemap to IndexNow 🤖
 Based on [IndexNow for Python](https://jakob-bagterp.github.io/index-now-for-python/), this action can automatically submit your URLs and sitemap to IndexNow for faster indexing by Bing, Yandex, DuckDuckGo and other search engines.
 
-If you're using GitHub Pages to publish your website, it's straightforward to incorporate it into your workflow. The following workflow will automatically submit the URLs for your sitemap at regular intervals, such as once a month:
+If you're already using GitHub Actions, it's straightforward to incorporate it into your project. The [following workflow will automatically submit the URLs from your sitemap](https://jakob-bagterp.github.io/index-now-submit-sitemap-urls-action/) at regular intervals, such as once a month:
 
 ```yaml linenums="1" title=".github/workflows/submit_sitemap_to_index_now.yml"
 name: Submit Sitemap to IndexNow
