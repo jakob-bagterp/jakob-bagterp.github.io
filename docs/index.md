@@ -23,7 +23,7 @@ Lightweight Python package that makes it easy and fast to print colored text in 
 [Go to documentation](https://jakob-bagterp.github.io/colorist-for-python/){ .md-button .md-button--primary }
 
 ## IndexNow for Python 🔎
-Package that makes it easy to submit URLs to the IndexNow API of Bing, Yandex, and other search engines.
+Package that makes it easy to submit URLs to the IndexNow API of Bing, Yandex, DuckDuckGo, and other search engines.
 
 [![Downloads](https://static.pepy.tech/badge/index-now-for-python)](https://pepy.tech/project/index-now-for-python)
 [![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-for-python)](https://github.com/jakob-bagterp/index-now-for-python/)
@@ -33,15 +33,14 @@ Package that makes it easy to submit URLs to the IndexNow API of Bing, Yandex, a
 ### Action to Automatically Submit URLs and Sitemap to IndexNow 🤖
 Based on [IndexNow for Python](https://jakob-bagterp.github.io/index-now-for-python/), this action can automatically submit your URLs and sitemap to IndexNow for faster indexing by Bing, Yandex, DuckDuckGo and other search engines.
 
-If you're using GitHub Pages to publish your site, it's easy to add it to your workflow. The following workflow will automatically trigger when GitHub Pages has published your site, so you can submit the latest version of your sitemap:
+If you're using GitHub Pages to publish your website, it's straightforward to incorporate it into your workflow. The following workflow will automatically submit the URLs for your sitemap at regular intervals, such as once a month:
 
 ```yaml linenums="1" title=".github/workflows/submit_sitemap_to_index_now.yml"
 name: Submit Sitemap to IndexNow
 
 on:
-  workflow_run:
-    workflows: [pages-build-deployment]
-    types: [completed]
+  schedule:
+    - cron: 0 0 1 * *  # Run at midnight UTC on the first day of each month.
 
 jobs:
   submit-sitemap:
@@ -53,16 +52,8 @@ jobs:
           host: example.com
           api_key: ${{ secrets.INDEX_NOW_API_KEY }}
           api_key_location: https://example.com/${{ secrets.INDEX_NOW_API_KEY }}.txt
-          sitemap_locations: https://example.com/sitemap.xml
           endpoint: yandex
-```
-
-Alternatively, if you would like to submit your sitemap on a schedule, such as once a month, adjust the `on` condition.
-
-```yaml linenums="3" title=".github/workflows/submit_sitemap_to_index_now.yml"
-on:
-  schedule:
-    - cron: 0 0 1 * *  # Run at midnight UTC on the 1st day of each month.
+          sitemap_locations: https://example.com/sitemap.xml
 ```
 
 For more information about the `secrets.INDEX_NOW_API_KEY` and other variables [here](https://jakob-bagterp.github.io/index-now-for-python/user-guide/github-actions/automated-workflows/).
