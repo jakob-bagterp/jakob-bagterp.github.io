@@ -1,5 +1,5 @@
 ---
-title: Open Source Projects by Jakob Bagterp
+title: Overview of Projects
 description: Python packages and tools that makes life a little easier. Get access to the source code and documentation for each project here.
 hide:
   - navigation
