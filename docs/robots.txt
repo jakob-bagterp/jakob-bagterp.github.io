@@ -5,5 +5,5 @@ Sitemap: https://jakob-bagterp.github.io/sitemap.xml
 Sitemap: https://jakob-bagterp.github.io/browserist/sitemap.xml
 Sitemap: https://jakob-bagterp.github.io/colorist-for-python/sitemap.xml
 Sitemap: https://jakob-bagterp.github.io/index-now-for-python/sitemap.xml
-Sitemap: https://jakob-bagterp.github.io/index-now-submit-sitemap-gh-pages-action/sitemap.xml
+Sitemap: https://jakob-bagterp.github.io/index-now-submit-sitemap-urls-action/sitemap.xml
 Sitemap: https://jakob-bagterp.github.io/timer-for-python/sitemap.xml
