@@ -56,7 +56,7 @@ jobs:
           sitemap_locations: https://example.com/sitemap.xml
 ```
 
-For more information about the `secrets.INDEX_NOW_API_KEY` and other variables [here](https://jakob-bagterp.github.io/index-now-for-python/user-guide/github-actions/automated-workflows/).
+Find more information about the `secrets.INDEX_NOW_API_KEY` and other variables [here](https://jakob-bagterp.github.io/index-now-for-python/user-guide/github-actions/automated-workflows/).
 
 [![IndexNow for Python source code on GitHub](https://img.shields.io/static/v1?label=GitHub&message=source%20code&logo=github&color=teal&link=https%3A%2F%2Fgithub.com%2Fjakob-bagterp%2Findex-now-submit-sitemap-urls-action)](https://github.com/jakob-bagterp/index-now-submit-sitemap-urls-action/)
 
