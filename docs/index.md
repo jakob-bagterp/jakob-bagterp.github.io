@@ -72,7 +72,9 @@ Lightweight Python package that makes it easy to measure how much time it takes 
 
 [Go to documentation](https://jakob-bagterp.github.io/timer-for-python/){ .md-button .md-button--primary }
 
-## Donate 🏅
+## Donate and Support the Projects 🏅
+If you have already downloaded and tried any of the packages, perhaps you would like to support their development?
+
 !!! tip "Become a Sponsor"
     If you find these projects helpful, please consider supporting its development. Your donations will help keep them alive and growing. Every contribution, no matter the size, makes a difference.
 
