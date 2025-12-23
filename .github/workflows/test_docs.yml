@@ -1,4 +1,4 @@
-name: Test MkDocs
+name: Test Build Documentation
 
 on:
   pull_request:
@@ -25,17 +25,9 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.14"
-      - name: Set up cached packages
-        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r ./docs/requirements.txt
-      - name: Test MkDocs build
-        run: mkdocs build --strict --verbose
+      - name: Test build documentation website with Zensical
+        run: zensical build --strict
