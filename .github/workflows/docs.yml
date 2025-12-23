@@ -32,7 +32,7 @@ jobs:
           pip install --upgrade pip
           pip install -r ./docs/requirements.txt
       - name: Build documentation website with Zensical
-        run: zensical build --clean 
+        run: zensical build --clean
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
