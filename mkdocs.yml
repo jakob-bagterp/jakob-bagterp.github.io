@@ -59,7 +59,7 @@ markdown_extensions:
   - footnotes
   - tables
   - pymdownx.emoji:
-      emoji_index: !!python/name:zensical.extensions.emoji.twemoji 
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
       emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
 
 extra:
