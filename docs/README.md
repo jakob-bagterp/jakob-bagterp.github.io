@@ -1,15 +1,13 @@
-# MkDocs Documentation 📚
-The documentation template and build pipeline is based on [MkDocs](https://www.mkdocs.org), and this directory contains the source files for building the documentation.
+# Documentation Site 📚
+The documentation template and build pipeline is based on [Zensical](https://zensical.org/) – a rewritten extension of [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) – and this directory contains the source files for building the documentation.
 
 ## Configuration
-Find the MkDocs configuration in the `mkdocs.yml` file in the root of the project.
+Find the configuration in the `mkdocs.yml` file in the root of the project.
 
 ## Dependencies
 Overview of the dependencies:
 
-* Build tool: [MkDocs](https://www.mkdocs.org/)
-* Theme: [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
-* Plugins: Various [theme extensions](https://squidfunk.github.io/mkdocs-material/extensions/) and [mkdocstrings](https://mkdocstrings.github.io) for source code documentation
+* Build tool: [Zensical](https://zensical.org/)
 
 You can find all the dependencies in the `/docs/requirements.txt` file. How to install them from the root of the project:
 
@@ -24,42 +22,41 @@ You can find the workflow files in the `/.github/workflows` directory. For examp
 
 * `test_docs.yml`
 * `docs.yml`
-* etc.
 
 ## Useful Commands
 ### Build
 Basic build command:
 
 ```bash
-mkdocs build
+zensical build
 ```
 
 For more verbose output and stricter checks, use the following command:
 
 ```bash
-mkdocs build --strict --verbose
+zensical build --strict
 ```
 
 ### Local Development and Previewing
 To preview the documentation hosted on a local machine, use the following command:
 
 ```bash
-mkdocs serve
+zensical serve
 ```
 
 ### Troubleshooting
-If you're running a virtual environment with [`venv`](https://docs.python.org/3/library/venv.html) (e.g. created with the command `python3 -m venv .venv`), sometimes the  MkDocs dependencies break for unknown reasons.
+If you're running a virtual environment with [`venv`](https://docs.python.org/3/library/venv.html) (e.g. created with the command `python3 -m venv .venv`), sometimes the dependencies break for unknown reasons.
 
 After activating the virtual environment with the `source .venv/bin/activate` command, try using the following commands instead:
 
 ```bash
-python3 -m mkdocs build
-python3 -m mkdocs serve
+python3 -m zensical build
+python3 -m zensical serve
 ```
 
 Or trying executing the commands with a specific version of Python:
 
 ```bash
-python3.11 -m mkdocs build
-python3.11 -m mkdocs serve
+python3.11 -m zensical build
+python3.11 -m zensical serve
 ```
