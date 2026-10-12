@@ -33,9 +33,9 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r ./docs/requirements.txt
+        run: uv sync --frozen
       - name: Test MkDocs build
-        run: mkdocs build --strict --verbose
+        run: uv run mkdocs build --strict --verbose
